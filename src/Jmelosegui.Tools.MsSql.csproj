@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+
+    <PackAsTool>true</PackAsTool>
+    <ToolCommandName>mssql</ToolCommandName>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>Juan Elosegui</Authors>
+    <Product>Jmeloseguil.Tools.MsSql</Product>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/jmelosegui/mssql</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/jmelosegui/mssql</PackageProjectUrl>
+    <PackageTags>dotnet tools mssql</PackageTags>
+    <Description>dotnet tool to interact with Microsoft Sql Server</Description>
+    <RootNamespace>Jmelosegui.Tools</RootNamespace>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="5.1.2" />
+    <PackageReference Include="System.CommandLine" Version="2.0.0-beta4.22272.1" />
+  </ItemGroup>
+</Project>
